@@ -1,0 +1,36 @@
+.keys {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.keys kbd {
+    font-weight: bolder;
+    border: 2px solid #212121;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+.keys .key {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #212121;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    transition: all 0.07s ease;
+}
+.keys .key:active {
+    transform: scale(0.95);
+}
+.keys .key.playing {
+    background: #212121;
+    color: white;
+    transform: scale(1.1);
+}
